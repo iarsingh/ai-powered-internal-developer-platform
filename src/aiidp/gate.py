@@ -7,5 +7,6 @@ def check(body):
         raise InputError("body must be an object")
     failed = []
 
-    for key in ("ci", "helm", "policy"):\n        if not body.get(key): failed.append(key)
+    for key in ("ci", "helm", "policy"):
+        if not body.get(key): failed.append(key)
     return {"passed": not failed, "failed": failed, "applied": False}
