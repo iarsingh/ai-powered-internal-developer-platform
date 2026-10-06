@@ -52,14 +52,14 @@ These checked-in guides provide the project’s detailed design, operational con
 | --- | --- | --- |
 | `GET /healthz` | `healthz` | [`src/aiidp/main.py`](src/aiidp/main.py#L10) |
 | `POST /check` | `post_check` | [`src/aiidp/main.py`](src/aiidp/main.py#L15) |
-| `GET /readyz` | `readyz` | [`src/aiidp/ops.py`](src/aiidp/ops.py#L44) |
-| `POST /workspaces` | `create_workspace` | [`src/aiidp/ops.py`](src/aiidp/ops.py#L49) |
-| `GET /workspaces` | `list_workspaces` | [`src/aiidp/ops.py`](src/aiidp/ops.py#L66) |
-| `POST /workspaces/{workspace_id}/jobs` | `create_job` | [`src/aiidp/ops.py`](src/aiidp/ops.py#L73) |
-| `GET /jobs/{job_id}` | `get_job` | [`src/aiidp/ops.py`](src/aiidp/ops.py#L96) |
-| `POST /jobs/{job_id}/approve` | `approve_job` | [`src/aiidp/ops.py`](src/aiidp/ops.py#L105) |
-| `GET /audit` | `audit` | [`src/aiidp/ops.py`](src/aiidp/ops.py#L122) |
-| `GET /metrics` | `metrics` | [`src/aiidp/ops.py`](src/aiidp/ops.py#L138) |
+| `GET /readyz` | `readyz` | [`src/aiidp/ops.py`](src/aiidp/ops.py#L74) |
+| `POST /workspaces` | `create_workspace` | [`src/aiidp/ops.py`](src/aiidp/ops.py#L80) |
+| `GET /workspaces` | `list_workspaces` | [`src/aiidp/ops.py`](src/aiidp/ops.py#L98) |
+| `POST /workspaces/{workspace_id}/jobs` | `create_job` | [`src/aiidp/ops.py`](src/aiidp/ops.py#L106) |
+| `GET /jobs/{job_id}` | `get_job` | [`src/aiidp/ops.py`](src/aiidp/ops.py#L130) |
+| `POST /jobs/{job_id}/approve` | `approve_job` | [`src/aiidp/ops.py`](src/aiidp/ops.py#L140) |
+| `GET /audit` | `audit` | [`src/aiidp/ops.py`](src/aiidp/ops.py#L160) |
+| `GET /metrics` | `metrics` | [`src/aiidp/ops.py`](src/aiidp/ops.py#L176) |
 
 The table lists literal route decorators found in the inspected Python modules. Router prefixes and middleware can add behavior; check the linked handler and application setup before calling an endpoint.
 
