@@ -1,5 +1,12 @@
 # AI-Powered Internal Developer Platform
 
+## Overview
+
+A golden path check for an internal developer platform. The `/check` endpoint passes a service only when its CI, Helm and policy flags are all true, and fails it otherwise, so it is clear which part of the paved road is missing. A `/v1` ops API adds workspaces, tenant isolation, job approval and audit records, and tests cover both the gate and the ops API.
+
+- **Built with:** Python, pytest, Docker, Docker Compose, GitHub Actions
+- **Scope:** Local laptop proof with tests; it calls no hosted model and applies no production changes.
+
 <!-- project-guide:start -->
 ## Project guide
 
